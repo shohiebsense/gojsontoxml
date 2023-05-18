@@ -249,7 +249,7 @@ Result:
         "onMouseUp": "sun1.opacity = (sun1.opacity / 100) * 90;"
     }
 }}    
-```. 
+```
 
 ```.xml
 <?xml version="1.0" encoding="UTF-8"?>
