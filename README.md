@@ -21,6 +21,10 @@ Todo: test cases
 
 Complains, feedbacks, opinions are appreciated.  
 
+Gotta catch some money guys for living. Thanks a lot.  
+
+https://sociabuzz.com/shohiebsense/tribe
+
 ### tests
 
 ```.json
