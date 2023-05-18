@@ -219,4 +219,67 @@ Result:
 	</web-app>
 </Object>
 
+```  
+---
+
+```.json
+{"widget": {
+    "debug": "on",
+    "window": {
+        "title": "Sample Konfabulator Widget",
+        "name": "main_window",
+        "width": 500,
+        "height": 500
+    },
+    "image": { 
+        "src": "Images/Sun.png",
+        "name": "sun1",
+        "hOffset": 250,
+        "vOffset": 250,
+        "alignment": "center"
+    },
+    "text": {
+        "data": "Click Here",
+        "size": 36,
+        "style": "bold",
+        "name": "text1",
+        "hOffset": 250,
+        "vOffset": 100,
+        "alignment": "center",
+        "onMouseUp": "sun1.opacity = (sun1.opacity / 100) * 90;"
+    }
+}}    
+```. 
+
+```.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<Object>
+	<widget>
+		<debug>on</debug>
+		<window>
+			<title>Sample Konfabulator Widget</title>
+			<name>main_window</name>
+			<width>500.000000</width>
+			<height>500.000000</height>
+		</window>
+		<image>
+			<alignment>center</alignment>
+			<src>Images/Sun.png</src>
+			<name>sun1</name>
+			<hOffset>250.000000</hOffset>
+			<vOffset>250.000000</vOffset>
+		</image>
+		<text>
+			<size>36.000000</size>
+			<style>bold</style>
+			<name>text1</name>
+			<hOffset>250.000000</hOffset>
+			<vOffset>100.000000</vOffset>
+			<alignment>center</alignment>
+			<onMouseUp>sun1.opacity = (sun1.opacity / 100) * 90;</onMouseUp>
+			<data>Click Here</data>
+		</text>
+	</widget>
+</Object>
+
 ```
