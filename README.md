@@ -2,7 +2,7 @@
 
 conversion from `map[string]interface{}` a.k.a `any` to (hopefully) a valid xml in `[]byte`.  
 
-It uses github.com/beevik/etree
+It uses [etree](https://github.com/beevik/etree)
 
 ## usage example
 
