@@ -8,8 +8,8 @@ conversion from `map[string]interface{}` a.k.a `any` to (hopefully) a valid xml 
 dataBytes, err := gojsontoxml.JsonToXml(data)
 
 if err != nil {
-	log.Panicln(err)
-	return
+   log.Panicln(err)
+   return
 }
   
 w.Header().Set("Content-Type", "application/xml")
