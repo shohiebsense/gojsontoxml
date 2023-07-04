@@ -134,11 +134,16 @@ func parseSliceOfString(obj *etree.Element, key string, data []string) {
 	}
 }
 
-func JsonToXml(data map[string]interface{}) ([]byte, error) {
+func JsonToXml(data map[string]interface{}, rootName string) ([]byte, error) {
 
 	doc := etree.NewDocument()
 	doc.CreateProcInst("xml", `version="1.0" encoding="UTF-8"`)
-	element := doc.CreateElement("Object")
+	var element *etree.Element
+	if (len(rootName) == 0) {
+		element = doc.CreateElement("Object")
+	} else {
+		element = doc.CreateElement(rootName)
+	}
 	parseXml(doc, element, data)
 	doc.Indent(2)
 	
